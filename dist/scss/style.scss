@@ -1,0 +1,55 @@
+@use "functions";
+@use "resets";
+@use "variables";
+
+main {
+  display: flex;
+  font-family: var(--fontfamily);
+  background-color: var(--lightgray);
+  min-height: 81vh;
+  align-items: center;
+  font-size: functions.em(15);
+  & .container {
+    max-width: functions.em(375);
+    margin: 0 auto;
+    & .card {
+      background-color: var(--white);
+      padding: functions.em(18);
+      border-radius: functions.em(17);
+      text-align: center;
+      margin: 0 functions.em(16);
+      & img {
+        width: 100%;
+        border-radius: functions.em(12);
+      }
+      & .text {
+        padding: functions.em(22) functions.em(10);
+        & h2 {
+          color: var(--darkblue);
+          padding-bottom: functions.em(15);
+        }
+        & p {
+          color: var(--grayishblue);
+          padding-bottom: functions.em(15);
+        }
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  width: 100vw;
+  padding: functions.em(60);
+  background-color: var(--grayishblue);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &footer .attribution {
+    font-size: functions.em(14);
+    color: var(--white);
+    text-align: center;
+    &footer .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
