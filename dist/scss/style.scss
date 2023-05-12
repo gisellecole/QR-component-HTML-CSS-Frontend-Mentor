@@ -26,6 +26,7 @@ main {
   }
   & .title {
     color: var(--dark-blue);
+    font-size: functions.em(23);
     text-align: center;
     width: 90%;
     align-self: center;

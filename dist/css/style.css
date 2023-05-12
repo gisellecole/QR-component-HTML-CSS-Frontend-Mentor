@@ -41,6 +41,7 @@ main .card-image {
 }
 main .title {
   color: var(--dark-blue);
+  font-size: 1.4375em;
   text-align: center;
   width: 90%;
   align-self: center;
