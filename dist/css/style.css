@@ -7,73 +7,69 @@
 
 :root {
   --white: hsl(0, 0%, 100%);
-  --lightgray: hsl(212, 45%, 89%);
-  --grayishblue: hsl(220, 15%, 55%);
-  --darkblue: hsl(218, 44%, 22%);
-  --footerlink: hsl(228, 45%, 44%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --footer-link: hsl(228, 45%, 44%);
   --red: #dc3545;
-  --fontfamily: "Outfit", sans-serif;
+  --font-Outfit: "Outfit", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--light-gray);
+  font-family: var(--font-Outfit);
 }
 
 main {
   display: flex;
-  font-family: var(--fontfamily);
-  background-color: var(--lightgray);
-  min-height: 92vh;
-  align-items: center;
-  font-size: 0.9375em;
-}
-@media (min-width: 820px) {
-  main {
-    min-height: 93vh;
-  }
-}
-main .container {
-  max-width: 23.4375em;
-  margin: 0 auto;
-}
-main .container .card {
+  flex-direction: column;
+  width: 20em;
+  height: 31em;
+  padding-bottom: 2.1875em;
   background-color: var(--white);
-  padding: 1.125em;
-  border-radius: 1.0625em;
+  border-radius: 0.9375em;
+  gap: 0.9375em;
+  box-shadow: 0 0.125em 0.9375em rgba(0, 0, 0, 0.1);
+}
+main .card-image {
+  border-radius: 0.625em;
+  margin: 0.8125em;
+  margin-bottom: 0.5625em;
+}
+main .title {
+  color: var(--dark-blue);
   text-align: center;
-  margin: 0 1em;
+  width: 90%;
+  align-self: center;
 }
-main .container .card img {
-  width: 100%;
-  border-radius: 0.75em;
-}
-main .container .card .text {
-  padding: 1.375em 0.625em;
-}
-main .container .card .text h2 {
-  color: var(--darkblue);
-  padding-bottom: 0.9375em;
-}
-main .container .card .text p {
-  color: var(--grayishblue);
-  padding-bottom: 0.9375em;
+main .description {
+  color: var(--grayish-blue);
+  font-size: 0.9375em;
+  text-align: center;
+  padding: 0 1.875em;
 }
 
-footer {
-  display: flex;
-  width: 100vw;
-  padding: 1.25em;
-  background-color: var(--grayishblue);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+footer.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.625em;
+  background-color: var(--grayish-blue);
 }
-footer .attribution {
-  font-size: 0.875em;
-  color: var(--darkblue);
+footer.attribution p {
   text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.735rem;
 }
-@media (min-width: 820px) {
-  footer .attribution {
-    font-size: 1.25em;
+footer.attribution a {
+  color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 440px) {
+  .container {
+    width: 80%;
   }
-}
-footer .attribution a {
-  color: var(--footerlink);
 }/*# sourceMappingURL=style.css.map */
