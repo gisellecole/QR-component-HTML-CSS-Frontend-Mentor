@@ -10,6 +10,7 @@
   --lightgray: hsl(212, 45%, 89%);
   --grayishblue: hsl(220, 15%, 55%);
   --darkblue: hsl(218, 44%, 22%);
+  --footerlink: hsl(228, 45%, 44%);
   --red: #dc3545;
   --fontfamily: "Outfit", sans-serif;
 }
@@ -21,6 +22,11 @@ main {
   min-height: 81vh;
   align-items: center;
   font-size: 0.9375em;
+}
+@media (min-width: 820px) {
+  main {
+    min-height: 85vh;
+  }
 }
 main .container {
   max-width: 23.4375em;
@@ -52,17 +58,22 @@ main .container .card .text p {
 footer {
   display: flex;
   width: 100vw;
-  padding: 3.75em;
+  padding: 4em;
   background-color: var(--grayishblue);
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-footerfooter .attribution {
+footer .attribution {
   font-size: 0.875em;
-  color: var(--white);
+  color: var(--darkblue);
   text-align: center;
 }
-footerfooter .attributionfooter .attribution a {
-  color: hsl(228deg, 45%, 44%);
+@media (min-width: 820px) {
+  footer .attribution {
+    font-size: 1.25em;
+  }
+}
+footer .attribution a {
+  color: var(--footerlink);
 }/*# sourceMappingURL=style.css.map */

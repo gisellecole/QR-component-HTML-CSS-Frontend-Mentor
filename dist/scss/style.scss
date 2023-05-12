@@ -9,6 +9,9 @@ main {
   min-height: 81vh;
   align-items: center;
   font-size: functions.em(15);
+  @media (min-width: 820px) {
+    min-height: 85vh;
+  }
   & .container {
     max-width: functions.em(375);
     margin: 0 auto;
@@ -39,17 +42,20 @@ main {
 footer {
   display: flex;
   width: 100vw;
-  padding: functions.em(60);
+  padding: functions.em(64);
   background-color: var(--grayishblue);
   align-items: center;
   justify-content: center;
   text-align: center;
-  &footer .attribution {
+  & .attribution {
     font-size: functions.em(14);
-    color: var(--white);
+    color: var(--darkblue);
     text-align: center;
-    &footer .attribution a {
-      color: hsl(228, 45%, 44%);
+    @media (min-width: 820px) {
+      font-size: functions.em(20);
     }
+  }
+  & .attribution a {
+    color: var(--footerlink);
   }
 }
