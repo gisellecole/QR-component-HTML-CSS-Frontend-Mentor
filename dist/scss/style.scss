@@ -6,11 +6,11 @@ main {
   display: flex;
   font-family: var(--fontfamily);
   background-color: var(--lightgray);
-  min-height: 81vh;
+  min-height: 92vh;
   align-items: center;
   font-size: functions.em(15);
   @media (min-width: 820px) {
-    min-height: 85vh;
+    min-height: 93vh;
   }
   & .container {
     max-width: functions.em(375);
@@ -42,7 +42,7 @@ main {
 footer {
   display: flex;
   width: 100vw;
-  padding: functions.em(64);
+  padding: functions.em(20);
   background-color: var(--grayishblue);
   align-items: center;
   justify-content: center;
